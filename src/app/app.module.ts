@@ -6,6 +6,11 @@ import { HeaderComponent } from './header/header.component';
 import { ShopComponent } from './shop/shop.component';
 import { ProductItemComponent } from './shop/product-item/product-item.component';
 import { CartComponent } from './shop/cart/cart.component';
+import { DropdownDirective } from './shared/dropdown.directive';
+import { BlogComponent } from './blog/blog.component';
+import { HomeComponent } from './home/home.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -13,10 +18,15 @@ import { CartComponent } from './shop/cart/cart.component';
     HeaderComponent,
     ShopComponent,
     ProductItemComponent,
-    CartComponent
+    CartComponent,
+    DropdownDirective,
+    BlogComponent,
+    HomeComponent,
+    ErrorPageComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

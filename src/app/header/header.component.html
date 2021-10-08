@@ -1,37 +1,39 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Paducah Coffee Company</a>
+    <a class="navbar-brand" (click)="onHome()" style="cursor: pointer;">Paducah Coffee Company</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <li class="nav-item" routerLinkActive="active">
+          <a (click)="onHome()" class="nav-link" aria-current="page" style="cursor: pointer;">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Shop</a>
+        <li class="nav-item" routerLinkActive="active">
+          <a (click)="onShop()"
+          routerLinkActive="active"
+          class="nav-link"
+          style="cursor: pointer;"
+          >Shop</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" style="cursor: pointer;">
             Products
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" tabindex="-1" >Blog</a>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" tabindex="-1" style="cursor: pointer;">Blog</a>
         </li>
       </ul>
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-primary" type="submit">Search</button>
       </form>
-      <a href="#" class="nav-link" style="color: rgb(230, 227, 227)">Cart</a>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" tabindex="-1" style="cursor: pointer;">Cart</a>
+      </li>
+      </ul>
     </div>
   </div>
 </nav>
