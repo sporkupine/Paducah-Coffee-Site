@@ -1,10 +1,10 @@
 # PaducahCoffeeSite
 
 #TODO:
-Finish routing
-Dummy content in Blog view
-stock photos in Shop view
-Cart functionality
+Finish routing, 
+Dummy content in Blog view, 
+stock photos in Shop view, 
+Cart functionality, 
 Fix active link tracking in header.
 
 
