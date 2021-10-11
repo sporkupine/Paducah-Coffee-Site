@@ -1,1 +1,11 @@
-<p>cart works!</p>
+<div class="container">
+  <div class="row">
+    <div class="h3">
+      Your Cart
+    </div>
+  </div>
+  <div class="row" *ngFor="let product of cart">
+    <h6>{{product.name}}</h6>
+    <p>{{product.price}}</p>
+  </div>
+</div>

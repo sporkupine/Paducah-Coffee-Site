@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BlogPostItemComponent } from './blog/blog-post-item/blog-post-item.component';
+import { ProductsComponent } from './shop/products/products.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { BlogPostItemComponent } from './blog/blog-post-item/blog-post-item.comp
     BlogComponent,
     HomeComponent,
     ErrorPageComponent,
-    BlogPostItemComponent
+    BlogPostItemComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
