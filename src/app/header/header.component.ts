@@ -18,5 +18,11 @@ export class HeaderComponent implements OnInit {
   onShop(){
     this.router.navigate(['shop'], {relativeTo: this.route});
   }
+  onBlog(){
+    this.router.navigate(['blog'], {relativeTo: this.route});
+  }
+  onProducts(){
+    this.router.navigate(['products'], {relativeTo: this.route});
+  }
 
 }

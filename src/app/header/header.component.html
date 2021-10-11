@@ -16,13 +16,16 @@
           style="cursor: pointer;"
           >Shop</a>
         </li>
-        <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link" style="cursor: pointer;">
+        <li
+          class="nav-item" routerLinkActive="active">
+          <a
+           (click)="onProducts()"
+           class="nav-link" style="cursor: pointer;">
             Products
           </a>
         </li>
         <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link" tabindex="-1" style="cursor: pointer;">Blog</a>
+          <a (click)="onBlog()" class="nav-link" tabindex="-1" style="cursor: pointer;">Blog</a>
         </li>
       </ul>
       <form class="d-flex">
