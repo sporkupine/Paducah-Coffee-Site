@@ -1,12 +1,12 @@
 # PaducahCoffeeSite
 
 #TODO:
-- ~~Finish routing
-- ~~Dummy content in Blog view
+- ~~Finish routing~~
+- ~~Dummy content in Blog view~~
 - Stock photos in Shop view
 - Cart functionality
 - ~~Fix active link tracking in header
--- maybe ask in class about this one
+-- maybe ask in class about this one~~
 - Make a Cart component
 - Make a Products component
 
