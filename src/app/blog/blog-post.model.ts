@@ -1,3 +1,3 @@
 export class BlogPost {
-  constructor(public title: string, public date: Date, public content: string) {}
+  constructor(public title: string, public date: string, public content: string) {}
 }

@@ -11,6 +11,7 @@ import { BlogComponent } from './blog/blog.component';
 import { HomeComponent } from './home/home.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { AppRoutingModule } from './app-routing.module';
+import { BlogPostItemComponent } from './blog/blog-post-item/blog-post-item.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AppRoutingModule } from './app-routing.module';
     DropdownDirective,
     BlogComponent,
     HomeComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    BlogPostItemComponent
   ],
   imports: [
     BrowserModule,
