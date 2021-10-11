@@ -1,14 +1,14 @@
 # PaducahCoffeeSite
 
 #TODO:
-- Finish routing
-- Dummy content in Blog view
+- ~~Finish routing~~
+- ~~Dummy content in Blog view~~
 - Stock photos in Shop view
 - Cart functionality
-- Fix active link tracking in header
--- maybe ask in class about this one
-- Make a Cart component
-- Make a Products component
+- ~~Fix active link tracking in header
+-- maybe ask in class about this one~~
+- ~~Make a Cart component~~
+- ~~Make a Products component~~
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
