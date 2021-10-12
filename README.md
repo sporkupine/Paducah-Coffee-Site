@@ -13,6 +13,7 @@
 - remove 'add to cart' button from Product view
 - add unselectable "sold out" products to Product view, but not Shop view
 - add About view (replace Product?)
+- put logo image into files --use logo for icon
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
