@@ -1,5 +1,6 @@
-import { Component, Injectable, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Product } from '../shared/product.model';
+import { CartService } from './cart.service';
 import { ShopService } from './shop.service';
 
 @Component({
