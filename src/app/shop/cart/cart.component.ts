@@ -16,8 +16,10 @@ export class CartComponent implements OnInit {
   }
 
   onDeleteFromCart(index){
-
     this.cartService.onDelete(index);
+  }
+  onCheckout(){
+    this.cartService.onCheckout;
   }
 
 }
