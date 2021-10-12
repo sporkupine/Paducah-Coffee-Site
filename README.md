@@ -9,6 +9,10 @@
 -- maybe ask in class about this one~~
 - ~~Make a Cart component~~
 - ~~Make a Products component~~
+- Homepage Content
+- remove 'add to cart' button from Product view
+- add unselectable "sold out" products to Product view, but not Shop view
+- add About view (replace Product?)
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
