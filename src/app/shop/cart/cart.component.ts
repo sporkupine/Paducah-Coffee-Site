@@ -15,4 +15,9 @@ export class CartComponent implements OnInit {
     this.cart = this.cartService.onGetCart();
   }
 
+  onDeleteFromCart(index){
+
+    this.cartService.onDelete(index);
+  }
+
 }

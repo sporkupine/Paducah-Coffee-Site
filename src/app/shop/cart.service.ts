@@ -16,7 +16,12 @@ export class CartService {
   }
 
   onGetCart(){
-    return this.cart.slice();
+    return this.cart;
+  }
+
+  onDelete(i: number){
+    this.cart.splice(i, 1)
   }
   constructor() { }
 }
+

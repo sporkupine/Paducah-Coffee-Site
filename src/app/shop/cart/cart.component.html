@@ -4,8 +4,15 @@
       Your Cart
     </div>
   </div>
-  <div class="row" *ngFor="let product of cart">
+  <div class="row" *ngFor="let product of cart; let i = index">
     <h6>{{product.name}}</h6>
     <p>{{product.price}}</p>
+    <div class="d-grid gap-2 d-md-block">
+      <button
+      class="btn-danger"
+      (click)="onDeleteFromCart(i)"
+      style="border-radius: 5px;"
+      >Delete</button>
+    </div>
   </div>
 </div>
