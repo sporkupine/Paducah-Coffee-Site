@@ -1,6 +1,7 @@
 # PaducahCoffeeSite
 
 #TODO:
+- Fix broken hamburger button on navbar collapse
 - ~~Finish routing~~
 - ~~Dummy content in Blog view~~
 - Stock photos in Shop view
