@@ -12,6 +12,7 @@
 - ~~Make a Products component~~
 - Homepage Content
 - remove 'add to cart' button from Product view
+   - find a way to contain it in Shop component rather than product-item component?
 - add unselectable "sold out" products to Product view, but not Shop view (MAY SCRAP THIS)
 - add About view (replace Product?)
 - put logo image into files --use logo for icon
