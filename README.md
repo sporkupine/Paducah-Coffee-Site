@@ -1,7 +1,8 @@
 # PaducahCoffeeSite
 
 #TODO:
-- Stock photos in Shop view
+- Merge duplicate products in cart, show number instead of duplicates
+- Stock photos in Shop & Product views
 - Cart functionality
   - currently, checkout button empties 'cart' array
   - would like to move contents to a 'purchased' array and display it in cart view.
