@@ -1,3 +1,4 @@
+import { style } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -7,6 +8,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  isShown: boolean = false;
 
   constructor(private router: Router, private route: ActivatedRoute) { }
 
@@ -24,5 +26,10 @@ export class HeaderComponent implements OnInit {
   onProducts(){
     this.router.navigate(['products'], {relativeTo: this.route});
   }
+  onAbout(){
+    this.router.navigate(['about'], {relativeTo: this.route});
+  }
+
+
 
 }

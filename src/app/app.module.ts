@@ -13,6 +13,7 @@ import { ErrorPageComponent } from './error-page/error-page.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BlogPostItemComponent } from './blog/blog-post-item/blog-post-item.component';
 import { ProductsComponent } from './shop/products/products.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ProductsComponent } from './shop/products/products.component';
     HomeComponent,
     ErrorPageComponent,
     BlogPostItemComponent,
-    ProductsComponent
+    ProductsComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

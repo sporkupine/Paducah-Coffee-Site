@@ -1,7 +1,21 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" (click)="onHome()" style="cursor: pointer;">Paducah Coffee Company</a>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      (click)="isShown = !isShown"
+      >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" 
+        id="navbarSupportedContent"
+        [ngClass]="{ 'show': isShown }">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a (click)="onHome()"
@@ -22,7 +36,6 @@
         <li
           class="nav-item">
           <a
-
            (click)="onProducts()"
            class="nav-link" style="cursor: pointer;"
            routerLink="/products"
@@ -37,6 +50,15 @@
             style="cursor: pointer;"
             routerLink="/blog"
             routerLinkActive="active-link">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a 
+          (click)="onAbout()"
+           class="nav-link"
+            tabindex="-1"
+            style="cursor: pointer;"
+            routerLink="/about"
+            routerLinkActive="active-link">About</a>
         </li>
       </ul>
       <form class="d-flex">
