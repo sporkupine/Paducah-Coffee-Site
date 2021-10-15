@@ -20,6 +20,8 @@
 - put logo image into files --use logo for icon
 - figure out a "checkout" function
 - better organization in Shop &/or Products view - try Bootstrap "card" class
+  - tinker with card configuration. Maybe the card needs to be on the Shop/Product component rather than product-item?
+  - this could help with the add to cart button issue
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
