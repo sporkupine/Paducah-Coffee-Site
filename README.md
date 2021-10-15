@@ -1,20 +1,25 @@
 # PaducahCoffeeSite
 
 #TODO:
+- ~~Fix broken hamburger button on navbar collapse~~
 - ~~Finish routing~~
 - ~~Dummy content in Blog view~~
 - Stock photos in Shop view
 - Cart functionality
+  - currently, checkout button empties 'cart' array
+  - would like to move contents to a 'purchased' array and display it in cart view.
 - ~~Fix active link tracking in header
 -- maybe ask in class about this one~~
 - ~~Make a Cart component~~
 - ~~Make a Products component~~
 - Homepage Content
 - remove 'add to cart' button from Product view
+   - find a way to contain it in Shop component rather than product-item component?
 - add unselectable "sold out" products to Product view, but not Shop view (MAY SCRAP THIS)
-- add About view (replace Product?)
+- ~~add About view (replace Product?)~~
 - put logo image into files --use logo for icon
 - figure out a "checkout" function
+- better organization in Shop &/or Products view - try Bootstrap "card" class
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
