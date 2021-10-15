@@ -15,6 +15,8 @@
 - better organization in Shop &/or Products view - try Bootstrap "card" class
   - tinker with card configuration. Maybe the card needs to be on the Shop/Product component rather than product-item?
   - this could help with the add to cart button issue
+- make the Search bar work. I don't care what it does, just make it do something.
+  - this will apparently be covered in the Forms section
 
 #DONE:
 - ~~Fix broken hamburger button on navbar collapse~~
