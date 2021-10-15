@@ -18,7 +18,7 @@
 - make the Search bar work. I don't care what it does, just make it do something.
   - this will apparently be covered in the Forms section
 
-# DONE:
+### DONE:
 - ~~Fix broken hamburger button on navbar collapse~~
 - ~~Finish routing~~
 - ~~Dummy content in Blog view~~
