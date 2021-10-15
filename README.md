@@ -1,6 +1,6 @@
 # PaducahCoffeeSite
 
-#TODO:
+##TODO:
 - Merge duplicate products in cart, show number instead of duplicates
 - Stock photos in Shop & Product views
 - Cart functionality
