@@ -6,6 +6,8 @@
 - ~~Dummy content in Blog view~~
 - Stock photos in Shop view
 - Cart functionality
+  - currently, checkout button empties 'cart' array
+  - would like to move contents to a 'purchased' array and display it in cart view.
 - ~~Fix active link tracking in header
 -- maybe ask in class about this one~~
 - ~~Make a Cart component~~
@@ -17,6 +19,7 @@
 - add About view (replace Product?)
 - put logo image into files --use logo for icon
 - figure out a "checkout" function
+- better organization in Shop &/or Products view - try Bootstrap "card" class
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
