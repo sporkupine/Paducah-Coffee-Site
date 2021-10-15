@@ -9,7 +9,7 @@
     <p>{{product.price}}</p>
     <div class="d-grid gap-2 d-md-block">
       <button
-      class="btn-danger"
+      class="btn btn-danger"
       (click)="onDeleteFromCart(i)"
       style="border-radius: 3px;"
       >Remove</button>
@@ -18,7 +18,9 @@
   <hr>
   <div class="row">
     <div class="d-grid gap-2 d-md-block">
-      <button class="btn-outline-success" (click)="onCheckout()">Checkout</button>
+      <button
+      class="btn btn-outline-success"
+      (click)="onCheckout()">Checkout</button>
     </div>
   </div>
 </div>
