@@ -17,6 +17,7 @@
   - this could help with the add to cart button issue
 - make the Search bar work. I don't care what it does, just make it do something.
   - this will apparently be covered in the Forms section
+- Change Blog view so that blog homepage displays blog titles, dates, maybe a brief description. User can click on blog title and be taken to blog post.
 
 ### DONE:
 - ~~Fix broken hamburger button on navbar collapse~~
