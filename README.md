@@ -10,13 +10,16 @@
 - remove 'add to cart' button from Product view
    - find a way to contain it in Shop component rather than product-item component?
 - add unselectable "sold out" products to Product view, but not Shop view (MAY SCRAP THIS)
-- put logo image into files --use logo for icon
+- ~~put logo image into files~~
+  - use logo for icon
+  - figure out why logo file won't work for icon
 - figure out a "checkout" function
 - better organization in Shop &/or Products view - try Bootstrap "card" class
   - tinker with card configuration. Maybe the card needs to be on the Shop/Product component rather than product-item?
   - this could help with the add to cart button issue
 - make the Search bar work. I don't care what it does, just make it do something.
   - this will apparently be covered in the Forms section
+- Change Blog view so that blog homepage displays blog titles, dates, maybe a brief description. User can click on blog title and be taken to blog post.
 
 ### DONE:
 - ~~Fix broken hamburger button on navbar collapse~~
