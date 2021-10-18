@@ -1,5 +1,6 @@
-# PaducahCoffeeSite
+# Paducah Coffee Site
 
+Developing a new site for Paducah Coffee Company, with e-commerce functionality and a blog. More utility to be added as I think of it.
 ## TODO:
 - Merge duplicate products in cart, show number instead of duplicates
 - Stock photos in Shop & Product views
