@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { BlogPost } from '../blog-post.model';
 import { BlogService } from '../blog.service';
 
@@ -9,11 +10,13 @@ import { BlogService } from '../blog.service';
 })
 export class BlogPostItemComponent implements OnInit {
   @Input() blogPost: BlogPost;
-  blogPosts: BlogPost[] = []
-  constructor(private blogService: BlogService) { }
+  blogPosts: BlogPost[] = [];
+  constructor(private blogService: BlogService, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.blogPosts = this.blogService.getBlogPosts();
-  }
+    //this function may be unnecessary now
+    //this.blogPosts = this.blogService.getBlogPosts();
 
+    //"active blog post" here? to tell the DOM which/what to display?
+  }
 }

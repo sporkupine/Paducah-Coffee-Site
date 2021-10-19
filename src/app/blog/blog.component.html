@@ -5,7 +5,16 @@
     </div>
   </div>
   <hr>
-  <app-blog-post-item *ngFor="let post of blogPosts"
-  [blogPost]='post'></app-blog-post-item>
+  <div class="card-group" *ngFor="let post of blogPosts">
+    <div class="card"
+    (click)="onBlogPostNav(this.post)"
+    style="cursor: pointer; max-width: 50vw;">
+      <h5 class="card-title">{{post.title}}</h5>
+      <h6 class="card-text">{{post.date}}</h6>
+      <p class="card-text">{{post.content.substr(0,50) + '...'}}</p>
+    </div>
+  </div>
+  <!-- <app-blog-post-item *ngFor="let post of blogPosts"
+  [blogPost]='post'></app-blog-post-item> -->
 </div>
 

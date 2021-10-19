@@ -7,6 +7,7 @@ import { CartComponent } from "./shop/cart/cart.component";
 import { ProductsComponent } from "./shop/products/products.component";
 import { ShopComponent } from "./shop/shop.component";
 import { AboutComponent} from "./about/about.component";
+import { BlogPostItemComponent } from "./blog/blog-post-item/blog-post-item.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: "full"},
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'shop', component: ShopComponent},
   { path: 'cart', component: CartComponent},
   { path: 'blog', component: BlogComponent},
+  { path: 'blog/:id', component: BlogPostItemComponent},
   { path: 'products', component: ProductsComponent},
   { path: 'about', component: AboutComponent},
   { path: '**', component: ErrorPageComponent}
