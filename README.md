@@ -1,5 +1,6 @@
-# PaducahCoffeeSite
+# Paducah Coffee Site
 
+Developing a new site for Paducah Coffee Company, with e-commerce functionality and a blog. More utility to be added as I think of it.
 ## TODO:
 - Merge duplicate products in cart, show number instead of duplicates
 - Stock photos in Shop & Product views
@@ -10,9 +11,6 @@
 - remove 'add to cart' button from Product view
    - find a way to contain it in Shop component rather than product-item component?
 - add unselectable "sold out" products to Product view, but not Shop view (MAY SCRAP THIS)
-- ~~put logo image into files~~
-  - use logo for icon
-  - figure out why logo file won't work for icon
 - figure out a "checkout" function
 - better organization in Shop &/or Products view - try Bootstrap "card" class
   - tinker with card configuration. Maybe the card needs to be on the Shop/Product component rather than product-item?
@@ -30,6 +28,9 @@
 - ~~Make a Cart component~~
 - ~~Make a Products component~~
 - - ~~add About view (replace Product?)~~
+- - ~~put logo image into files~~
+  - ~~use logo for icon~~
+  - ~~figure out why logo file won't work for icon~~
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
