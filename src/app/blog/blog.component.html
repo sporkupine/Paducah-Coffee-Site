@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="col-xs-6">
+    <div class="col-xs-8">
       <h2>Paducah Coffee Blog</h2>
     </div>
   </div>
@@ -9,12 +9,10 @@
     <div class="card"
     (click)="onBlogPostNav(this.post)"
     style="cursor: pointer; max-width: 50vw;">
-      <h5 class="card-title">{{post.title}}</h5>
+      <h5 class="card-title"><strong>{{post.title}}</strong></h5>
       <h6 class="card-text">{{post.date}}</h6>
-      <p class="card-text">{{post.content.substr(0,50) + '...'}}</p>
+      <p class="card-text">{{post.content.substr(0,50) + ' ...'}}</p>
     </div>
   </div>
-  <!-- <app-blog-post-item *ngFor="let post of blogPosts"
-  [blogPost]='post'></app-blog-post-item> -->
 </div>
 
