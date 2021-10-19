@@ -3,6 +3,7 @@
 Developing a new site for Paducah Coffee Company, with e-commerce functionality and a blog. More utility to be added as I think of it.
 ## TODO:
 - Merge duplicate products in cart, show number instead of duplicates
+  - may need to make Cart an array of arrays, with logic to check if an item already exists before pushing. See StackOverflow page on subject.
 - Stock photos in Shop & Product views
 - Cart functionality
   - currently, checkout button empties 'cart' array
@@ -12,12 +13,13 @@ Developing a new site for Paducah Coffee Company, with e-commerce functionality 
    - find a way to contain it in Shop component rather than product-item component?
 - add unselectable "sold out" products to Product view, but not Shop view (MAY SCRAP THIS)
 - figure out a "checkout" function
-- better organization in Shop &/or Products view - try Bootstrap "card" class
+- better organization in Shop &/or Products view ~~- try Bootstrap "card" class~~
   - tinker with card configuration. Maybe the card needs to be on the Shop/Product component rather than product-item?
   - this could help with the add to cart button issue
 - make the Search bar work. I don't care what it does, just make it do something.
   - this will apparently be covered in the Forms section
 - Change Blog view so that blog homepage displays blog titles, dates, maybe a brief description. User can click on blog title and be taken to blog post.
+  - Blog view works fine, but struggling to load individual blog posts. URL is updating properly, so I think I just need to watch Max do it again to see what I'm forgetting.
 
 ### DONE:
 - ~~Fix broken hamburger button on navbar collapse~~
