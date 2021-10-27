@@ -2,6 +2,7 @@
 
 Developing a new site for Paducah Coffee Company, with e-commerce functionality and a blog. More utility to be added as I think of it.
 ## TODO:
+- use pipes to change the date output of the blog posts
 - Add a 'Contact Us' view/page. Use new forms knowledge to implement a contact form allowing users to email me.
 - Merge duplicate products in cart, show number instead of duplicates
   - may need to make Cart an array of arrays, with logic to check if an item already exists before pushing. See StackOverflow page on subject.
