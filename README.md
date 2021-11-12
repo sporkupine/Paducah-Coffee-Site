@@ -2,6 +2,9 @@
 
 Developing a new site for Paducah Coffee Company, with e-commerce functionality and a blog. More utility to be added as I think of it.
 ## TODO:
+- Add authentication, allowing customers to sign in and manage cart/purchases
+  - allow users to 'favorite' certain products?
+  - allow 'admin' accounts to create, edit, and delete blog posts?
 - use pipes to change the date output of the blog posts
 - Add a 'Contact Us' view/page. Use new forms knowledge to implement a contact form allowing users to email me.
 - Merge duplicate products in cart, show number instead of duplicates
@@ -19,9 +22,9 @@ Developing a new site for Paducah Coffee Company, with e-commerce functionality 
   - tinker with card configuration. Maybe the card needs to be on the Shop/Product component rather than product-item?
   - this could help with the add to cart button issue
 - make the Search bar work. I don't care what it does, just make it do something.
-  - this will apparently be covered in the Forms section
-- Change Blog view so that blog homepage displays blog titles, dates, maybe a brief description. User can click on blog title and be taken to blog post.
-  - Blog view works fine, but struggling to load individual blog posts. URL is updating properly, so I think I just need to watch Max do it again to see what I'm forgetting.
+  - ~~this will apparently be covered in the Forms section~~
+  - array.filter, probably?
+
 
 ### DONE:
 - ~~Fix broken hamburger button on navbar collapse~~
@@ -35,6 +38,8 @@ Developing a new site for Paducah Coffee Company, with e-commerce functionality 
 - - ~~put logo image into files~~
   - ~~use logo for icon~~
   - ~~figure out why logo file won't work for icon~~
+- - ~~Change Blog view so that blog homepage displays blog titles, dates, maybe a brief description. User can click on blog title and be taken to blog post.~~
+  - ~~Blog view works fine, but struggling to load individual blog posts. URL is updating properly, so I think I just need to watch Max do it again to see what I'm forgetting.~~
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
