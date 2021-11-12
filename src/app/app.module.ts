@@ -14,6 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BlogPostItemComponent } from './blog/blog-post-item/blog-post-item.component';
 import { ProductsComponent } from './shop/products/products.component';
 import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AboutComponent } from './about/about.component';
     ErrorPageComponent,
     BlogPostItemComponent,
     ProductsComponent,
-    AboutComponent
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

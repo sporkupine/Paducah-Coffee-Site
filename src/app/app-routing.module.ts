@@ -8,6 +8,7 @@ import { ProductsComponent } from "./shop/products/products.component";
 import { ShopComponent } from "./shop/shop.component";
 import { AboutComponent} from "./about/about.component";
 import { BlogPostItemComponent } from "./blog/blog-post-item/blog-post-item.component";
+import { ContactComponent } from "./contact/contact.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: "full"},
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'blog/:id', component: BlogPostItemComponent},
   { path: 'products', component: ProductsComponent},
   { path: 'about', component: AboutComponent},
+  { path: 'contact', component: ContactComponent},
   { path: '**', component: ErrorPageComponent}
 ]
 

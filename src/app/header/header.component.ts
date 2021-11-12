@@ -29,6 +29,9 @@ export class HeaderComponent implements OnInit {
   onAbout(){
     this.router.navigate(['about'], {relativeTo: this.route});
   }
+  onContactUs(){
+    this.router.navigate(['contact'], {relativeTo: this.route});
+  }
 
 
 

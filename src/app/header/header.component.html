@@ -13,7 +13,7 @@
       >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" 
+    <div class="collapse navbar-collapse"
         id="navbarSupportedContent"
         [ngClass]="{ 'show': isShown }">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -52,13 +52,22 @@
             routerLinkActive="active-link">Blog</a>
         </li>
         <li class="nav-item">
-          <a 
+          <a
           (click)="onAbout()"
            class="nav-link"
             tabindex="-1"
             style="cursor: pointer;"
             routerLink="/about"
             routerLinkActive="active-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a
+          (click)="onContactUs()"
+           class="nav-link"
+            tabindex="-1"
+            style="cursor: pointer;"
+            routerLink="/contact"
+            routerLinkActive="active-link">Contact Us</a>
         </li>
       </ul>
       <form class="d-flex">
@@ -72,6 +81,13 @@
         style="cursor: pointer;"
         routerLink="/cart"
         routerLinkActive="active-link">Cart</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"
+        tabindex="-1"
+        style="cursor: pointer;"
+        routerLink=""
+        routerLinkActive="active-link">Login</a>
       </li>
       </ul>
     </div>
