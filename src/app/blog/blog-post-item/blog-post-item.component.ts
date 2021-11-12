@@ -1,23 +1,27 @@
-import { Component, Input, OnDestroy, OnInit } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Subscription } from 'rxjs';
 import { BlogPost } from '../blog-post.model';
 import { BlogService } from '../blog.service';
 
 @Component({
   selector: 'app-blog-post-item',
   templateUrl: './blog-post-item.component.html',
-  styleUrls: ['./blog-post-item.component.css']
+  styleUrls: ['./blog-post-item.component.css'],
 })
 export class BlogPostItemComponent implements OnInit {
   id: number;
-  private sub: any;
   @Input() blogPost: BlogPost;
-  blogPosts: BlogPost[] = [];
-  constructor(private blogService: BlogService, private router: Router, private route: ActivatedRoute) { }
+  activePost: BlogPost;
+
+  constructor(
+    private blogService: BlogService,
+    private route: ActivatedRoute
+  ) {}
 
   ngOnInit(): void {
-    //this function may be unnecessary now
-    //this.blogPosts = this.blogService.getBlogPosts();
+    this.id = this.route.snapshot.params['id'];
+    this.activePost = this.blogService.getPost(this.id);
 
     //"active blog post" here? to tell the DOM which/what to display?
 

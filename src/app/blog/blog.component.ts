@@ -10,6 +10,7 @@ import { BlogService } from './blog.service';
 })
 export class BlogComponent implements OnInit {
   blogPosts: BlogPost[] = [];
+  activePost: BlogPost;
 
   constructor(private blogService: BlogService,private router: Router, private route: ActivatedRoute) { }
 
@@ -19,6 +20,7 @@ export class BlogComponent implements OnInit {
 
   onBlogPostNav(post) {
     this.router.navigate([post.id], {relativeTo: this.route});
+    this.activePost = post;
   }
 
 }

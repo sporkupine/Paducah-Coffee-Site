@@ -1,13 +1,23 @@
 <div class="container">
   <div class="pull-left">
     <h4 class="list-group-item-heading">
-      {{blogPost.title}}
+      {{activePost.title}}
     </h4>
     <h6>
-      {{blogPost.date}}
+      {{activePost.date}}
     </h6>
     <p class="list-item-group-text">
-      {{blogPost.content}}
+      {{activePost.content}}
     </p>
   </div>
 </div>
+<!--
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h4>{{ activePost.title }}</h4>
+      <h6>Date: {{ activePost.date }}</h6>
+      <p> {{ activePost.content }}</p>
+    </div>
+  </div>
+</div> -->
