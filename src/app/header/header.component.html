@@ -1,6 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" (click)="onHome()" style="cursor: pointer;">Paducah Coffee Company</a>
+    <a class="navbar-brand" (click)="onHome()" style="cursor: pointer"
+      >Paducah Coffee Company</a
+    >
     <button
       class="navbar-toggler"
       type="button"
@@ -10,85 +12,111 @@
       aria-expanded="false"
       aria-label="Toggle navigation"
       (click)="isShown = !isShown"
-      >
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse"
-        id="navbarSupportedContent"
-        [ngClass]="{ 'show': isShown }">
+    <div
+      class="collapse navbar-collapse"
+      id="navbarSupportedContent"
+      [ngClass]="{ show: isShown }"
+    >
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a (click)="onHome()"
-           class="nav-link"
-           aria-current="page"
-           style="cursor: pointer;"
-           routerLink="/home"
-           routerLinkActive="active-link">Home</a>
+          <a
+            (click)="onHome()"
+            class="nav-link"
+            aria-current="page"
+            style="cursor: pointer"
+            routerLink="/home"
+            routerLinkActive="active-link"
+            >Home</a
+          >
         </li>
         <li class="nav-item">
-          <a (click)="onShop()"
-          class="nav-link"
-          style="cursor: pointer;"
-          routerLink="/shop"
-          routerLinkActive="active-link"
-          >Shop</a>
-        </li>
-        <li
-          class="nav-item">
           <a
-           (click)="onProducts()"
-           class="nav-link" style="cursor: pointer;"
-           routerLink="/products"
-           routerLinkActive="active-link">
+            (click)="onShop()"
+            class="nav-link"
+            style="cursor: pointer"
+            routerLink="/shop"
+            routerLinkActive="active-link"
+            >Shop</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            (click)="onProducts()"
+            class="nav-link"
+            style="cursor: pointer"
+            routerLink="/products"
+            routerLinkActive="active-link"
+          >
             Products
           </a>
         </li>
         <li class="nav-item">
-          <a (click)="onBlog()"
-           class="nav-link"
+          <a
+            (click)="onBlog()"
+            class="nav-link"
             tabindex="-1"
-            style="cursor: pointer;"
+            style="cursor: pointer"
             routerLink="/blog"
-            routerLinkActive="active-link">Blog</a>
+            routerLinkActive="active-link"
+            >Blog</a
+          >
         </li>
         <li class="nav-item">
           <a
-          (click)="onAbout()"
-           class="nav-link"
+            (click)="onAbout()"
+            class="nav-link"
             tabindex="-1"
-            style="cursor: pointer;"
+            style="cursor: pointer"
             routerLink="/about"
-            routerLinkActive="active-link">About</a>
+            routerLinkActive="active-link"
+            >About</a
+          >
         </li>
         <li class="nav-item">
           <a
-          (click)="onContactUs()"
-           class="nav-link"
+            (click)="onContactUs()"
+            class="nav-link"
             tabindex="-1"
-            style="cursor: pointer;"
+            style="cursor: pointer"
             routerLink="/contact"
-            routerLinkActive="active-link">Contact Us</a>
+            routerLinkActive="active-link"
+            >Contact Us</a
+          >
         </li>
       </ul>
       <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
         <button class="btn btn-outline-primary" type="submit">Search</button>
       </form>
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      <li class="nav-item">
-        <a class="nav-link"
-        tabindex="-1"
-        style="cursor: pointer;"
-        routerLink="/cart"
-        routerLinkActive="active-link">Cart</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link"
-        tabindex="-1"
-        style="cursor: pointer;"
-        routerLink=""
-        routerLinkActive="active-link">Login</a>
-      </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            tabindex="-1"
+            style="cursor: pointer"
+            routerLink="/cart"
+            routerLinkActive="active-link"
+            >Cart</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            tabindex="-1"
+            style="cursor: pointer"
+            routerLink="/auth"
+            routerLinkActive="active-link"
+            >Login</a
+          >
+        </li>
       </ul>
     </div>
   </div>

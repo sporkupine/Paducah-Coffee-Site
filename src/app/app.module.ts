@@ -15,6 +15,7 @@ import { BlogPostItemComponent } from './blog/blog-post-item/blog-post-item.comp
 import { ProductsComponent } from './shop/products/products.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { AuthComponent } from './auth/auth.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ContactComponent } from './contact/contact.component';
     BlogPostItemComponent,
     ProductsComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
