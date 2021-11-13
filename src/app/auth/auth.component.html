@@ -1,10 +1,21 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-md-6 col-offset-3">
-      <form>
+      <!-- for some reason the form isn't working correctly.
+          The button is not disabled as it should be, and none of the
+          validators seem to be functioning -->
+      <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)">
         <div class="form-group">
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" class="form-control" />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            NgModel
+            required
+            email
+          />
         </div>
         <div class="form-group">
           <label for="password">Password:</label>
@@ -13,12 +24,20 @@
             id="password"
             name="password"
             class="form-control"
-
+            NgModel
+            required
+            minlength="6"
           />
         </div>
-        <br>
+        <br />
         <div>
-          <button class="btn btn-primary">Log In</button>
+          <button
+            class="btn btn-primary"
+            type="submit"
+            [disabled]="authForm.invalid"
+          >
+            Log In
+          </button>
         </div>
       </form>
     </div>
