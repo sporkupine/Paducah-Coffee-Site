@@ -10,9 +10,9 @@ export class AuthComponent implements OnInit {
 
   constructor() {}
 
-  onSubmit(authForm: NgForm) {
-    console.log(authForm.value);
-    authForm.reset();
+  onSubmit(form: NgForm) {
+    console.log(form.value);
+    form.reset();
 
   }
 

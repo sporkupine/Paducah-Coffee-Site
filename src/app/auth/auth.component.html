@@ -1,11 +1,6 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-md-6 col-offset-3">
-      <!-- for some reason the form isn't working correctly.
-          The button is not disabled as it should be, and none of the
-          validators seem to be functioning.
-          The 'ngNativeValidate' attribute is supposed to convert to HTML5 validation,
-      but doesn't seem to be working either.-->
       <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)">
         <div class="form-group">
           <label for="email">Email:</label>
@@ -14,9 +9,10 @@
             id="email"
             name="email"
             class="form-control"
-            NgModel
+            ngModel
             required
             email
+            placeholder="E-mail Address"
           />
         </div>
 
@@ -27,7 +23,7 @@
             type="password"
             id="password"
             name="password"
-            NgModel
+            ngModel
             required
             minlength="6"
           />
@@ -37,12 +33,13 @@
           <button
             class="btn btn-primary"
             type="submit"
-            [disabled]="!authForm.valid"
+            [disabled]="authForm.invalid"
           >
             Log In
           </button>
         </div>
       </form>
+      {{ authForm.valid }}
     </div>
   </div>
 </div>
