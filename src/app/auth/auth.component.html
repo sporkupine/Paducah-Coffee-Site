@@ -38,10 +38,7 @@
             class="btn btn-primary"
             type="submit"
             [disabled]="!authForm.valid"
-            (click)="authForm.valid ? onSubmit(authForm) : null"
           >
-            <!-- this ternary expression is from a stackoverflow thread.
-              I don't think it is working, but will come back to it later -->
             Log In
           </button>
         </div>
