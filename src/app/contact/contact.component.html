@@ -1,1 +1,50 @@
-<p>contact works!</p>
+<div class="container">
+  <div class="row">
+    <h2>Contact Us</h2>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-xs-3"></div>
+    <div class="col-md-6">
+      <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input
+            type="text"
+            id="contactName"
+            name="contactName"
+            class="form-control"
+            ngModel
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Your E-Mail address:</label>
+          <input
+            type="email"
+            id="contactEmail"
+            name="contactEmail"
+            class="form-control"
+            email
+            ngModel
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Your message: </label>
+          <br />
+          <textarea
+            name="message"
+            id="message"
+            rows="5"
+            class="form-control"
+          ></textarea>
+        </div>
+        <div>
+          <br>
+          <button class="btn btn-success" type="submit">Say Hi!</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

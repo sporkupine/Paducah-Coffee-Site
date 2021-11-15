@@ -1,6 +1,12 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-md-6 col-offset-3">
+      <h3>Log in or Sign Up!</h3>
+      <h5>
+        Save your favorites, sign up for a subscription, and be on the lookout
+        for our e-mail newsletter for discounts and goodies!
+      </h5>
+      <hr>
       <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)">
         <div class="form-group">
           <label for="email">Email:</label>
@@ -39,7 +45,6 @@
           </button>
         </div>
       </form>
-      {{ authForm.valid }}
     </div>
   </div>
 </div>
