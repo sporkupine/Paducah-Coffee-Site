@@ -21,6 +21,7 @@ Developing a new site for Paducah Coffee Company, with e-commerce functionality 
 - make the Search bar work. I don't care what it does, just make it do something.
   - ~~this will apparently be covered in the Forms section~~
   - array.filter, probably?
+- implement lazy loading and preloading for all components other than HomeComponent
 
 
 ### DONE:
