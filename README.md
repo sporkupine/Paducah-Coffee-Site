@@ -40,9 +40,9 @@ Developing a new site for Paducah Coffee Company, with e-commerce functionality 
   - ~~figure out why logo file won't work for icon~~
 - - ~~Change Blog view so that blog homepage displays blog titles, dates, maybe a brief description. User can click on blog title and be taken to blog post.~~
   - ~~Blog view works fine, but struggling to load individual blog posts. URL is updating properly, so I think I just need to watch Max do it again to see what I'm forgetting.~~
- ~~- Add a 'Contact Us' view/page. Use new forms knowledge to implement a contact form allowing users to email me.~~
- ~~- remove 'add to cart' button from Product view~~
-   ~~- find a way to contain it in Shop component rather than product-item component?~~
+ - ~~Add a 'Contact Us' view/page. Use new forms knowledge to implement a contact form allowing users to email me.~~
+ - ~~remove 'add to cart' button from Product view~~
+   - ~~find a way to contain it in Shop component rather than product-item component?~~
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
