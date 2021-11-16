@@ -2,7 +2,6 @@
 
 Developing a new site for Paducah Coffee Company, with e-commerce functionality and a blog. More utility to be added as I think of it.
 ## TODO:
-- use pipes to change the date output of the blog posts
 - Connect to a Firebase backend for authentication as well as product/cart storage as well as blog post storage.
   - users should be able to 'favorite' certain products
   - look into having 'admin' authorized accounts
@@ -41,6 +40,7 @@ Developing a new site for Paducah Coffee Company, with e-commerce functionality 
  - ~~Add a 'Contact Us' view/page. Use new forms knowledge to implement a contact form allowing users to email me.~~
  - ~~remove 'add to cart' button from Product view~~
    - ~~find a way to contain it in Shop component rather than product-item component?~~
+ - ~~use pipes to change the date output of the blog posts~~
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
