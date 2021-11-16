@@ -10,11 +10,11 @@ Developing a new site for Paducah Coffee Company, with e-commerce functionality 
   - may need to make Cart an array of arrays, with logic to check if an item already exists before pushing. See StackOverflow page on subject.
 - Stock photos in Shop & Product views
 - Cart functionality
+  - re-work the "checkout" function
   - currently, checkout button empties 'cart' array
   - would like to move contents to a 'purchased' array and display it in cart view.
 - Homepage Content
 - add unselectable "sold out" products to Product view, but not Shop view (MAY SCRAP THIS)
-- figure out a "checkout" function
 - better organization in Shop &/or Products view ~~- try Bootstrap "card" class~~
   - tinker with card configuration. Maybe the card needs to be on the Shop/Product component rather than product-item?
   - this could help with the add to cart button issue
