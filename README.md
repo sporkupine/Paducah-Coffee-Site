@@ -2,28 +2,26 @@
 
 Developing a new site for Paducah Coffee Company, with e-commerce functionality and a blog. More utility to be added as I think of it.
 ## TODO:
-- Add authentication, allowing customers to sign in and manage cart/purchases
-  - allow users to 'favorite' certain products?
-  - allow 'admin' accounts to create, edit, and delete blog posts?
-- use pipes to change the date output of the blog posts
 - Connect to a Firebase backend for authentication as well as product/cart storage as well as blog post storage.
+  - users should be able to 'favorite' certain products
   - look into having 'admin' authorized accounts
     - admin accounts should be able to post/edit/delete blog posts as well as products (this may be difficult to implement)
 - Merge duplicate products in cart, show number instead of duplicates
   - may need to make Cart an array of arrays, with logic to check if an item already exists before pushing. See StackOverflow page on subject.
 - Stock photos in Shop & Product views
 - Cart functionality
+  - re-work the "checkout" function
   - currently, checkout button empties 'cart' array
   - would like to move contents to a 'purchased' array and display it in cart view.
 - Homepage Content
 - add unselectable "sold out" products to Product view, but not Shop view (MAY SCRAP THIS)
-- figure out a "checkout" function
 - better organization in Shop &/or Products view ~~- try Bootstrap "card" class~~
   - tinker with card configuration. Maybe the card needs to be on the Shop/Product component rather than product-item?
   - this could help with the add to cart button issue
 - make the Search bar work. I don't care what it does, just make it do something.
   - ~~this will apparently be covered in the Forms section~~
   - array.filter, probably?
+- implement lazy loading and preloading for all components other than HomeComponent
 
 
 ### DONE:
@@ -43,6 +41,7 @@ Developing a new site for Paducah Coffee Company, with e-commerce functionality 
  - ~~Add a 'Contact Us' view/page. Use new forms knowledge to implement a contact form allowing users to email me.~~
  - ~~remove 'add to cart' button from Product view~~
    - ~~find a way to contain it in Shop component rather than product-item component?~~
+ - ~~use pipes to change the date output of the blog posts~~
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
