@@ -6,7 +6,9 @@ Developing a new site for Paducah Coffee Company, with e-commerce functionality 
   - allow users to 'favorite' certain products?
   - allow 'admin' accounts to create, edit, and delete blog posts?
 - use pipes to change the date output of the blog posts
-- Add a 'Contact Us' view/page. Use new forms knowledge to implement a contact form allowing users to email me.
+- Connect to a Firebase backend for authentication as well as product/cart storage as well as blog post storage.
+  - look into having 'admin' authorized accounts
+    - admin accounts should be able to post/edit/delete blog posts as well as products (this may be difficult to implement)
 - Merge duplicate products in cart, show number instead of duplicates
   - may need to make Cart an array of arrays, with logic to check if an item already exists before pushing. See StackOverflow page on subject.
 - Stock photos in Shop & Product views
@@ -14,8 +16,6 @@ Developing a new site for Paducah Coffee Company, with e-commerce functionality 
   - currently, checkout button empties 'cart' array
   - would like to move contents to a 'purchased' array and display it in cart view.
 - Homepage Content
-- remove 'add to cart' button from Product view
-   - find a way to contain it in Shop component rather than product-item component?
 - add unselectable "sold out" products to Product view, but not Shop view (MAY SCRAP THIS)
 - figure out a "checkout" function
 - better organization in Shop &/or Products view ~~- try Bootstrap "card" class~~
@@ -40,6 +40,9 @@ Developing a new site for Paducah Coffee Company, with e-commerce functionality 
   - ~~figure out why logo file won't work for icon~~
 - - ~~Change Blog view so that blog homepage displays blog titles, dates, maybe a brief description. User can click on blog title and be taken to blog post.~~
   - ~~Blog view works fine, but struggling to load individual blog posts. URL is updating properly, so I think I just need to watch Max do it again to see what I'm forgetting.~~
+ - ~~Add a 'Contact Us' view/page. Use new forms knowledge to implement a contact form allowing users to email me.~~
+ - ~~remove 'add to cart' button from Product view~~
+   - ~~find a way to contain it in Shop component rather than product-item component?~~
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
