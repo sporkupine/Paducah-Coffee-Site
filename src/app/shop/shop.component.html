@@ -1,14 +1,15 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-6">
-      <h2>
-        Shop Paducah Coffee
-      </h2>
+      <h2>Shop Paducah Coffee</h2>
     </div>
   </div>
-  <hr>
+  <hr />
   <div class="card-group">
-      <app-product-item *ngFor="let productEl of products"
-                     [product]="productEl"></app-product-item>
+    <app-product-item *ngFor="let productEl of products" [product]="productEl">
+      <a (click)="onAddToCart(product)" class="btn btn-primary"
+        >Add to Cart</a
+      ></app-product-item
+    >
   </div>
 </div>

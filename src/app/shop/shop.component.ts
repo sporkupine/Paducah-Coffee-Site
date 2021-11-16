@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Product } from '../shared/product.model';
 import { CartService } from './cart/cart.service';
 import { ShopService } from './shop.service';
@@ -9,12 +9,18 @@ import { ShopService } from './shop.service';
   styleUrls: ['./shop.component.css']
 })
 export class ShopComponent implements OnInit {
+  @Input() product: Product;
   products: Product[] = [];
 
-  constructor(private shopService: ShopService) { }
+  constructor(private shopService: ShopService, private cartService: CartService) { }
 
   ngOnInit(): void {
     this.products=this.shopService.getProducts();
+  }
+
+
+  onAddToCart(product: Product){
+    this.cartService.onAddtoCart(product);
   }
 
 }
