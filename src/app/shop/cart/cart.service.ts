@@ -24,6 +24,7 @@ export class CartService {
   }
 
   onCheckout(){
+    console.log(this.cart.slice());
     this.cart.splice(0, this.cart.length);
   }
   constructor() { }

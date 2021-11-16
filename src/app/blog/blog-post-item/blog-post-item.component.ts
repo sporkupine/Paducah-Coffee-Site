@@ -22,11 +22,5 @@ export class BlogPostItemComponent implements OnInit {
   ngOnInit(): void {
     this.id = this.route.snapshot.params['id'];
     this.activePost = this.blogService.getPost(this.id);
-
-    //"active blog post" here? to tell the DOM which/what to display?
-
-    // Stuck AF on this. URL is correctly updating with the ID of the post to be loaded.
-    // Sooo how do I tell the app to display the post with the corresponding ID?
-    // Will rewatch Max's videos in this section and hopefully find answers there.
   }
 }

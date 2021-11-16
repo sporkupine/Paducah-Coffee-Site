@@ -20,7 +20,7 @@
     <div class="d-grid gap-2 d-md-block">
       <button
       class="btn btn-outline-success"
-      (click)="onCheckout()">Checkout</button>
+      (click)="onCheckout()" [disabled]="this.cart.length == 0">Checkout</button>
     </div>
   </div>
 </div>

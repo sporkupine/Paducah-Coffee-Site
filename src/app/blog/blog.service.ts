@@ -39,7 +39,7 @@ export class BlogService {
   getBlogPosts() {
     return this.blogPosts.slice();
   }
-  // grabs a post by id number, may be useful if I can figure out where it goes
+
   getPost(id: number) {
     const post = this.blogPosts.find((p) => p.id == id);
     return post;

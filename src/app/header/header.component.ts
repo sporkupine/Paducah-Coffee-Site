@@ -5,34 +5,30 @@ import { ActivatedRoute, Router } from '@angular/router';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
   isShown: boolean = false;
 
-  constructor(private router: Router, private route: ActivatedRoute) { }
+  constructor(private router: Router, private route: ActivatedRoute) {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+  onHome() {
+    this.router.navigate(['home'], { relativeTo: this.route });
   }
-  onHome(){
-    this.router.navigate(['home'], {relativeTo: this.route});
+  onShop() {
+    this.router.navigate(['shop'], { relativeTo: this.route });
   }
-  onShop(){
-    this.router.navigate(['shop'], {relativeTo: this.route});
+  onBlog() {
+    this.router.navigate(['blog'], { relativeTo: this.route });
   }
-  onBlog(){
-    this.router.navigate(['blog'], {relativeTo: this.route});
+  onProducts() {
+    this.router.navigate(['products'], { relativeTo: this.route });
   }
-  onProducts(){
-    this.router.navigate(['products'], {relativeTo: this.route});
+  onAbout() {
+    this.router.navigate(['about'], { relativeTo: this.route });
   }
-  onAbout(){
-    this.router.navigate(['about'], {relativeTo: this.route});
+  onContactUs() {
+    this.router.navigate(['contact'], { relativeTo: this.route });
   }
-  onContactUs(){
-    this.router.navigate(['contact'], {relativeTo: this.route});
-  }
-
-
-
 }

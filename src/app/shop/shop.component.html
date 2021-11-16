@@ -7,7 +7,7 @@
   <hr />
   <div class="card-group">
     <app-product-item *ngFor="let productEl of products" [product]="productEl">
-      <a (click)="onAddToCart(product)" class="btn btn-primary"
+      <a (click)="onAddToCart(productEl)" class="btn btn-primary"
         >Add to Cart</a
       ></app-product-item
     >
