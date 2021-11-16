@@ -2,11 +2,9 @@
 
 Developing a new site for Paducah Coffee Company, with e-commerce functionality and a blog. More utility to be added as I think of it.
 ## TODO:
-- Add authentication, allowing customers to sign in and manage cart/purchases
-  - allow users to 'favorite' certain products?
-  - allow 'admin' accounts to create, edit, and delete blog posts?
 - use pipes to change the date output of the blog posts
 - Connect to a Firebase backend for authentication as well as product/cart storage as well as blog post storage.
+  - users should be able to 'favorite' certain products
   - look into having 'admin' authorized accounts
     - admin accounts should be able to post/edit/delete blog posts as well as products (this may be difficult to implement)
 - Merge duplicate products in cart, show number instead of duplicates
