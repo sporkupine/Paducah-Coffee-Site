@@ -16,12 +16,14 @@ Developing a new site for Paducah Coffee Company, with e-commerce functionality 
 - Homepage Content
 - add unselectable "sold out" products to Product view, but not Shop view (MAY SCRAP THIS)
 - better organization in Shop &/or Products view ~~- try Bootstrap "card" class~~
-  - tinker with card configuration. Maybe the card needs to be on the Shop/Product component rather than product-item?
-  - this could help with the add to cart button issue
+  - tinker with card configuration. ~~Maybe the card needs to be on the Shop/Product component rather than product-item?~~
+  - ~~this could help with the add to cart button issue~~
 - make the Search bar work. I don't care what it does, just make it do something.
   - ~~this will apparently be covered in the Forms section~~
   - array.filter, probably?
 - implement lazy loading and preloading for all components other than HomeComponent
+- potentially: add a footer with social media icons, sitemap, etc (Google all the info that should go in the footer)'
+- Add a loading spinner (and find a good place to display it)
 
 
 ### DONE:
