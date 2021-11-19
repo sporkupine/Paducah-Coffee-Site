@@ -22,7 +22,8 @@ Developing a new site for Paducah Coffee Company, with e-commerce functionality 
   - ~~this will apparently be covered in the Forms section~~
   - array.filter, probably?
 - implement lazy loading and preloading for all components other than HomeComponent
-- potentially: add a footer with social media icons, sitemap, etc (Google all the info that should go in the footer)
+- potentially: add a footer with social media icons, sitemap, etc (Google all the info that should go in the footer)'
+- Add a loading spinner (and find a good place to display it)
 
 
 ### DONE:
