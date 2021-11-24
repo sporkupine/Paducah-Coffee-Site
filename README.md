@@ -8,6 +8,7 @@ Developing a new site for Paducah Coffee Company, with e-commerce functionality 
     - admin accounts should be able to post/edit/delete blog posts as well as products (this may be difficult to implement)
 - Merge duplicate products in cart, show number instead of duplicates
   - may need to make Cart an array of arrays, with logic to check if an item already exists before pushing. See StackOverflow page on subject.
+     - (https://stackoverflow.com/questions/54809558/merge-duplicate-objects-in-an-array) or (https://stackoverflow.com/questions/30025965/merge-duplicate-objects-in-array-of-objects)
 - Stock photos in Shop & Product views
 - Cart functionality
   - re-work the "checkout" function
