@@ -1,7 +1,7 @@
 # Paducah Coffee Site
 
 Developing a new site for Paducah Coffee Company, with e-commerce functionality and a blog. More utility to be added as I think of it.
-## TODO:
+## TO DO:
 - Connect to a Firebase backend for authentication as well as product/cart storage as well as blog post storage.
   - users should be able to 'favorite' certain products
   - look into having 'admin' authorized accounts
