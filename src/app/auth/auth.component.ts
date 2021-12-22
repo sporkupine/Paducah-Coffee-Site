@@ -1,4 +1,3 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
@@ -10,6 +9,7 @@ import { AuthService } from './auth.service';
   styleUrls: ['./auth.component.css'],
 })
 export class AuthComponent implements OnInit {
+  loginMode: boolean = false;
 
   constructor(private authService: AuthService) {}
 
@@ -20,15 +20,27 @@ export class AuthComponent implements OnInit {
     const email = form.value.email;
     const password = form.value.password;
 
-    this.authService.signup(email, password).subscribe(responseData => {
-      console.log(responseData);
-
-    }, error => {
-      console.log(error);
-    });
+    if (this.loginMode) {
+      this.authService.login(email, password).subscribe(
+        (responseData) => {
+          console.log(responseData);
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+    } else {
+      this.authService.signup(email, password).subscribe(
+        (responseData) => {
+          console.log(responseData);
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+    }
 
     form.reset();
-
   }
 
   ngOnInit(): void {}

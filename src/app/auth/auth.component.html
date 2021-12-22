@@ -6,46 +6,112 @@
         Save your favorites, sign up for a subscription, and be on the lookout
         for our e-mail newsletter for news and discounts!
       </h5>
-      <hr>
-      <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)">
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            class="form-control"
-            ngModel
-            required
-            email
-            placeholder="E-mail Address"
-          />
-        </div>
+      <hr />
+      <div class="signup" *ngIf="!loginMode">
+        <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)">
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              ngModel
+              required
+              email
+              placeholder="E-mail Address"
+            />
+          </div>
 
-        <div class="form-group">
-          <label for="password">Password:</label>
-          <input
-            class="form-control"
-            type="password"
-            id="password"
-            name="password"
-            ngModel
-            required
-            minlength="6"
-          />
-        </div>
-        <br />
-        <div>
-          <button
-            class="btn btn-primary"
-            id="submitButton"
-            type="submit"
-            [disabled]="authForm.invalid"
-          >
-            Sign Up
-          </button>
-        </div>
-      </form>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input
+              class="form-control"
+              type="password"
+              id="password"
+              name="password"
+              ngModel
+              required
+              minlength="6"
+            />
+          </div>
+          <div class="form-group">
+            <label for="passwordConfirm">Confirm Password:</label>
+            <input
+              type="password"
+              id="passwordConfirm"
+              name="passwordConfirm"
+              ngModel
+              class="form-control"
+            />
+          </div>
+          <br />
+          <div>
+            <button
+              class="btn btn-primary"
+              id="submitButton"
+              type="submit"
+              [disabled]="authForm.invalid"
+            >
+              Sign Up
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="login" *ngIf="loginMode">
+        <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)">
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              ngModel
+              required
+              email
+              placeholder="E-mail Address"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input
+              class="form-control"
+              type="password"
+              id="password"
+              name="password"
+              ngModel
+              required
+              minlength="6"
+            />
+          </div>
+          <br />
+          <div>
+            <button
+              class="btn btn-primary"
+              id="submitButton"
+              type="submit"
+              [disabled]="authForm.invalid"
+            >
+              Log In
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div>
+      <br />
+      <p>
+        Already have an account?
+        <a
+          class="link-primary"
+          style="cursor: pointer"
+          (click)="loginMode = !loginMode"
+          >click here</a
+        >
+        to log in!
+      </p>
     </div>
   </div>
 </div>
