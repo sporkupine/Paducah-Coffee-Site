@@ -20,7 +20,11 @@
               required
               email
               placeholder="E-mail Address"
+              #email="ngModel"
             />
+            <span class="help-block" *ngIf="email.invalid && email.touched">
+              Please enter a valid e-mail address.</span
+            >
           </div>
 
           <div class="form-group">
@@ -71,7 +75,11 @@
               required
               email
               placeholder="E-mail Address"
+              #email="ngModel"
             />
+            <span class="help-block" *ngIf="email.invalid && email.touched">
+              Please enter a valid e-mail address.</span
+            >
           </div>
 
           <div class="form-group">
@@ -84,7 +92,13 @@
               ngModel
               required
               minlength="6"
+              #password="ngModel"
             />
+            <span
+            *ngIf="password.invalid && password.touched"
+            class="help-block"
+              >Password must be at least six characters in length.</span
+            >
           </div>
           <br />
           <div>
@@ -103,14 +117,14 @@
     <div>
       <br />
       <p>
-        {{ loginMode ? 'New around here?' : 'Already have an account?'}}
+        {{ loginMode ? "New around here?" : "Already have an account?" }}
         <a
           class="link-primary"
           style="cursor: pointer"
           (click)="loginMode = !loginMode"
           >click here</a
         >
-        {{ loginMode ? 'to sign up!' : 'to log in!'}}
+        {{ loginMode ? "to sign up!" : "to log in!" }}
       </p>
     </div>
   </div>
