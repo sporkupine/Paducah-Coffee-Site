@@ -8,7 +8,11 @@
       </h5>
       <hr />
       <div class="signup" *ngIf="!loginMode">
-        <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)">
+        <form
+          #authForm="ngForm"
+          (ngSubmit)="onSubmit(authForm)"
+          [mustMatch]="['password', 'passwordConfirm']"
+        >
           <div class="form-group">
             <label for="email">Email:</label>
             <input
@@ -37,7 +41,13 @@
               ngModel
               required
               minlength="6"
+              #password="ngModel"
             />
+            <span
+              *ngIf="password.invalid && password.touched"
+              class="help-block"
+              >Password must be at least six characters in length.</span
+            >
           </div>
           <div class="form-group">
             <label for="passwordConfirm">Confirm Password:</label>
@@ -47,7 +57,20 @@
               name="passwordConfirm"
               ngModel
               class="form-control"
+              #passwordConfirm="ngModel"
+              required
             />
+            <div
+              class="help-block"
+              *ngIf="authForm.submitted && passwordConfirm.invalid"
+            >
+              <span class="help-block" *ngIf="passwordConfirm.errors.required"
+                >Please confirm your password.</span
+              >
+              <span class="help-block" *ngIf="passwordConfirm.errors.mustMatch"
+                >Passwords must match.</span
+              >
+            </div>
           </div>
           <br />
           <div>
@@ -95,8 +118,8 @@
               #password="ngModel"
             />
             <span
-            *ngIf="password.invalid && password.touched"
-            class="help-block"
+              *ngIf="password.invalid && password.touched"
+              class="help-block"
               >Password must be at least six characters in length.</span
             >
           </div>
