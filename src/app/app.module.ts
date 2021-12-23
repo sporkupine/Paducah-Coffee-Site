@@ -18,6 +18,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AuthComponent } from './auth/auth.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { PasswordMatchDirective } from './auth/password-match.directive';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { HttpClientModule } from '@angular/common/http';
     ProductsComponent,
     AboutComponent,
     ContactComponent,
-    AuthComponent
+    AuthComponent,
+    PasswordMatchDirective
   ],
   imports: [
     BrowserModule,
