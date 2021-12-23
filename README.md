@@ -2,7 +2,7 @@
 
 Developing a new site for Paducah Coffee Company, with e-commerce functionality and a blog. More utility to be added as I think of it.
 ## TO DO:
-- Connect to a Firebase backend for authentication as well as product/cart storage as well as blog post storage.
+- Connect to a Firebase backend for product/cart storage as well as blog post storage.
   - users should be able to 'favorite' certain products
   - look into having 'admin' authorized accounts
     - admin accounts should be able to post/edit/delete blog posts as well as products (this may be difficult to implement)
@@ -45,6 +45,7 @@ Developing a new site for Paducah Coffee Company, with e-commerce functionality 
  - ~~remove 'add to cart' button from Product view~~
    - ~~find a way to contain it in Shop component rather than product-item component?~~
  - ~~use pipes to change the date output of the blog posts~~
+ - ~~Connect to Firebase authentication~~
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
