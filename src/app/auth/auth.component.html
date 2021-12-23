@@ -103,14 +103,14 @@
     <div>
       <br />
       <p>
-        Already have an account?
+        {{ loginMode ? 'New around here?' : 'Already have an account?'}}
         <a
           class="link-primary"
           style="cursor: pointer"
           (click)="loginMode = !loginMode"
           >click here</a
         >
-        to log in!
+        {{ loginMode ? 'to sign up!' : 'to log in!'}}
       </p>
     </div>
   </div>
