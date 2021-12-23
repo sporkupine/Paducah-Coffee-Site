@@ -60,17 +60,12 @@
               #passwordConfirm="ngModel"
               required
             />
-            <div
+            <span
               class="help-block"
-              *ngIf="authForm.submitted && passwordConfirm.invalid"
+              *ngIf="passwordConfirm.touched && passwordConfirm.invalid"
             >
-              <span class="help-block" *ngIf="passwordConfirm.errors.required"
-                >Please confirm your password.</span
-              >
-              <span class="help-block" *ngIf="passwordConfirm.errors.mustMatch"
-                >Passwords must match.</span
-              >
-            </div>
+              Passwords must match.
+            </span>
           </div>
           <br />
           <div>
