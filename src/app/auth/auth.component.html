@@ -7,7 +7,7 @@
         for our e-mail newsletter for news and discounts!
       </h5>
       <hr />
-      <div class="signup" *ngIf="!loginMode">
+      <div class="signup" *ngIf="!loginMode && !loading">
         <form
           #authForm="ngForm"
           (ngSubmit)="onSubmit(authForm)"
@@ -80,7 +80,7 @@
           </div>
         </form>
       </div>
-      <div class="login" *ngIf="loginMode">
+      <div class="login" *ngIf="loginMode && !loading">
         <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)">
           <div class="form-group">
             <label for="email">Email:</label>
@@ -130,6 +130,9 @@
             </button>
           </div>
         </form>
+      </div>
+      <div class="loading-spinner-container" *ngIf="loading">
+        <app-loading-spinner></app-loading-spinner>
       </div>
     </div>
     <div>
