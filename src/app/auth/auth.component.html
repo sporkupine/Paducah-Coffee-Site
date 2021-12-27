@@ -1,12 +1,16 @@
 <div class="container">
   <div class="row">
-    <div class="col-xs-12 col-md-6 col-offset-3">
+    <div class="col-3"></div>
+    <div class="col-md-6 col-offset-3">
       <h3>Log in or Sign Up!</h3>
       <h5>
         Save your favorites, sign up for a subscription, and be on the lookout
         for our e-mail newsletter for news and discounts!
       </h5>
       <hr />
+      <div class="alert alert-danger" *ngIf="error">
+        <p>{{ error }}</p>
+      </div>
       <div class="signup" *ngIf="!loginMode && !loading">
         <form
           #authForm="ngForm"
@@ -131,22 +135,22 @@
           </div>
         </form>
       </div>
-      <div class="loading-spinner-container" *ngIf="loading" style="text-align: center;">
+      <div class="loading-spinner-container" *ngIf="loading">
         <app-loading-spinner></app-loading-spinner>
       </div>
-    </div>
-    <div>
-      <br />
-      <p>
-        {{ loginMode ? "New around here?" : "Already have an account?" }}
-        <a
-          class="link-primary"
-          style="cursor: pointer"
-          (click)="loginMode = !loginMode"
-          >click here</a
-        >
-        {{ loginMode ? "to sign up!" : "to log in!" }}
-      </p>
+      <div>
+        <br />
+        <p>
+          {{ loginMode ? "New around here?" : "Already have an account?" }}
+          <a
+            class="link-primary"
+            style="cursor: pointer"
+            (click)="loginMode = !loginMode"
+            >click here</a
+          >
+          {{ loginMode ? "to sign up!" : "to log in!" }}
+        </p>
+      </div>
     </div>
   </div>
 </div>

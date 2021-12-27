@@ -11,6 +11,7 @@ import { AuthService } from './auth.service';
 export class AuthComponent implements OnInit {
   loginMode: boolean = false;
   loading: boolean = false;
+  error: string = null;
 
   constructor(private authService: AuthService) {}
 
@@ -30,6 +31,8 @@ export class AuthComponent implements OnInit {
         },
         (error) => {
           console.log(error);
+          this.error = 'An error occurred.';
+          this.loading = false;
         }
       );
     } else {
