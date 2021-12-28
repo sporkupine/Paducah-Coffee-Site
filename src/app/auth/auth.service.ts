@@ -18,8 +18,6 @@ export interface AuthResponseData {
 
 @Injectable({ providedIn: 'root' })
 export class AuthService {
-  isLoggedIn: boolean = false;
-
   tokenExpirationTimer: any;
 
   user = new BehaviorSubject<User>(null);

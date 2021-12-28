@@ -1,6 +1,7 @@
-import { style } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Subscription } from 'rxjs';
+import { AuthService } from '../auth/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -9,10 +10,20 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
   isShown: boolean = false;
+  userSub: Subscription;
+  isAuthenticated: boolean = false;
 
-  constructor(private router: Router, private route: ActivatedRoute) {}
+  constructor(
+    private router: Router,
+    private route: ActivatedRoute,
+    private authService: AuthService
+  ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.userSub = this.authService.user.subscribe((user) => {
+      this.isAuthenticated = !!user;
+    });
+  }
   onHome() {
     this.router.navigate(['home'], { relativeTo: this.route });
   }
@@ -30,5 +41,8 @@ export class HeaderComponent implements OnInit {
   }
   onContactUs() {
     this.router.navigate(['contact'], { relativeTo: this.route });
+  }
+  onLogout() {
+    this.authService.onLogout();
   }
 }
