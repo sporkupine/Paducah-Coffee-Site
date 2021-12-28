@@ -21,7 +21,8 @@ Developing a new site for Paducah Coffee Company, with e-commerce functionality 
   - ~~this could help with the add to cart button issue~~
 - make the Search bar work. I don't care what it does, just make it do something.
   - ~~this will apparently be covered in the Forms section~~
-  - array.filter, probably?
+  - ~~array.filter, probably?~~
+  - probably going to use [Algolia](https://www.algolia.com/doc/) API to search through blog posts and products (that need to be put in a database anyway)
 - implement lazy loading and preloading for all components other than HomeComponent
   - first must optimize and reorganize the entire app
     - each feature module must have its own routing config to implement lazy loading
