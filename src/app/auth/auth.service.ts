@@ -5,7 +5,7 @@ import { catchError, tap } from 'rxjs/operators';
 
 import { environment } from 'src/environments/environment';
 
-interface AuthResponseData {
+export interface AuthResponseData {
   idToken: string;
   email: string;
   refreshToken: string;
@@ -88,7 +88,7 @@ export class AuthService {
     switch (errorResponse.error.error.message) {
       case 'EMAIL_EXISTS':
         errorMessage =
-          'There is already an account associated with this email address. Did you mean to sign in?';
+          'We already have an account for this email address. Did you mean to sign in?';
         break;
       case 'EMAIL_NOT_FOUND':
         errorMessage =
