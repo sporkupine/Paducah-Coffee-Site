@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { AuthService } from '../auth/auth.service';
@@ -8,7 +8,7 @@ import { AuthService } from '../auth/auth.service';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements OnInit, OnDestroy {
   isShown: boolean = false;
   userSub: Subscription;
   isAuthenticated: boolean = false;
@@ -44,5 +44,9 @@ export class HeaderComponent implements OnInit {
   }
   onLogout() {
     this.authService.onLogout();
+  }
+
+  ngOnDestroy(): void {
+      this.userSub.unsubscribe();
   }
 }
