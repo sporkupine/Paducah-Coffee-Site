@@ -8,8 +8,8 @@
         for our e-mail newsletter for news and discounts!
       </h5>
       <hr />
-      <div class="alert alert-danger" *ngIf="error">
-        <p>{{ error }}</p>
+      <div class="alert alert-light text-dark" *ngIf="error">
+        <p class="text-dark">{{ error }}</p>
       </div>
       <div class="signup" *ngIf="!loginMode && !loading">
         <form
@@ -99,7 +99,7 @@
               placeholder="E-mail Address"
               #email="ngModel"
             />
-            <span class="help-block" *ngIf="email.invalid && email.touched">
+            <span class="help-block" *ngIf="email.invalid && email.touched" style="color: black;">
               Please enter a valid e-mail address.</span
             >
           </div>
