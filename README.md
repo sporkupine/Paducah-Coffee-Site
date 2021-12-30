@@ -26,7 +26,7 @@ Developing a new site for Paducah Coffee Company, with e-commerce functionality 
 - implement lazy loading and preloading for all components other than HomeComponent
   - first must optimize and reorganize the entire app
     - each feature module must have its own routing config to implement lazy loading
-- potentially: add a footer with social media icons, sitemap, etc (Google all the info that should go in the footer)'
+
 - Implement the loading spinner (cart component, blog component. really anywhere that will/does connect to Firebase)
 
 
@@ -51,6 +51,7 @@ Developing a new site for Paducah Coffee Company, with e-commerce functionality 
  - ~~Connect to Firebase authentication~~
  - ~~Create loading spinner~~
   - ~~add loading spinner to auth component~~
+- ~~add a footer with social media icons, sitemap, etc (Google all the info that should go in the footer)~~
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
