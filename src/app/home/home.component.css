@@ -1,7 +1,7 @@
 h1 {
   padding: 10%;
   font-size: 3.75rem;
-  color:rgb(231, 231, 231);
+  color: rgb(231, 231, 231);
 }
 
 .img-container {
@@ -12,14 +12,10 @@ h1 {
   margin-bottom: 10%;
   margin-left: 30px;
   transform: scale(1.25);
+  transition: 500ms ease-in-out;
 }
 
 .img-container:hover {
   margin-left: 5px;
   overflow: hidden;
-
-}
-
-.img-container {
-  transition: 500ms ease-in-out;
 }
