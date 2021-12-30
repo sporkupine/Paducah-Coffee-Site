@@ -20,6 +20,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { PasswordMatchDirective } from './auth/password-match.directive';
 import { LoadingSpinnerComponent } from './shared/loading-spinner/loading-spinner.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { LoadingSpinnerComponent } from './shared/loading-spinner/loading-spinne
     AuthComponent,
     LoadingSpinnerComponent,
     PasswordMatchDirective,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
