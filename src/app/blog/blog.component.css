@@ -1,0 +1,18 @@
+.card {
+  background-color: rgb(177, 207, 180);
+  margin: 0.3rem;
+  color: rgb(39, 39, 39) !important;
+  transition: 300ms ease-in-out;
+}
+
+.card-text, .card-title {
+  color: rgb(39, 39, 39) !important;
+}
+
+.card-title > strong {
+  color: rgb(39, 39, 39) !important;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
