@@ -1,0 +1,29 @@
+* {
+  --text-color: rgb(201, 198, 198);
+}
+
+h1 {
+  padding: 10%;
+  font-size: 3.75rem;
+  color:rgb(231, 231, 231)
+}
+
+.img-container {
+  background-image: url(../../assets/coffee-beans-unsplash.jpg);
+  background-size: cover;
+  overflow: hidden;
+  margin-top: 0;
+  margin-bottom: 10%;
+  margin-left: 30px;
+  transform: scale(1.25);
+}
+
+.img-container:hover {
+  margin-left: 0;
+  overflow: hidden;
+
+}
+
+.img-container {
+  transition: 500ms ease-in-out;
+}

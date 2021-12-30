@@ -1,1 +1,9 @@
+html body {
+  background-color:  rgb(70, 6, 6);
+}
 
+* {
+  --text-color: rgb(201, 198, 198);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+}
