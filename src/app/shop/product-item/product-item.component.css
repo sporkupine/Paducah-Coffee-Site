@@ -1,0 +1,9 @@
+.card {
+  background-color: rgb(177, 207, 180);
+  margin: 0.5rem;
+  color: rgb(39, 39, 39) !important;
+}
+
+.card-text, .card-title {
+  color: rgb(39, 39, 39) !important;
+}
