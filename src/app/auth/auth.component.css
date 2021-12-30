@@ -1,7 +1,13 @@
-.help-block {
-  color: red;
+span.help-block {
+  color: rgb(221, 221, 221) !important;
+  padding: 5px;
 }
 
 input.ng-invalid.ng-touched {
-  border: 1px solid red;
+  border: 2px solid rgb(242, 245, 99);
+}
+
+error-alert {
+  background-color: rgba(242, 245, 99, 0.75) !important;
+  color:rgb(44, 44, 44) !important;
 }
