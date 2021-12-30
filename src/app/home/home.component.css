@@ -1,11 +1,7 @@
-* {
-  --text-color: rgb(201, 198, 198);
-}
-
 h1 {
   padding: 10%;
   font-size: 3.75rem;
-  color:rgb(231, 231, 231)
+  color:rgb(231, 231, 231);
 }
 
 .img-container {
@@ -19,7 +15,7 @@ h1 {
 }
 
 .img-container:hover {
-  margin-left: 0;
+  margin-left: 5px;
   overflow: hidden;
 
 }
