@@ -30,14 +30,14 @@ h1 {
 .call-to-action {
   width: 18vw;
   cursor: pointer;
-  transition: 600ms;
+  transition: 450ms;
   color: #85b654;
   font-size: 2rem;
   background-color: rgb(29, 1, 1);
 }
 
 .call-to-action:hover{
-  background-color:rgb(197, 183, 92);
+  background-color:rgb(224, 218, 178);
   color: rgb(18, 19, 19);
-  transform:scaleY(1.2);
+  transform:scaleY(1.05);
 }
