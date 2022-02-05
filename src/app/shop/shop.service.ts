@@ -25,6 +25,11 @@ export class ShopService {
       'Sample Product 4',
       44.99,
       '#'
+    ),
+    new Product(
+      'Sample Product 5',
+      9.99,
+      '#'
     )
   ]
 
