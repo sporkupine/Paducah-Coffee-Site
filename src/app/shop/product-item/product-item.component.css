@@ -31,11 +31,11 @@ label input[type="checkbox"] {
 }
 
 
-.custom-checkbox .favorite-icon .fa-star, #fav-star {
+.custom-checkbox .fa-star, #fav-star {
   color: gold !important;
   position: absolute;
   top: 0.1em;
-  left: -0.5rem;
+  left: -1.25em;
   font-size: 1.1rem;
 }
 
@@ -54,6 +54,6 @@ label input[type="checkbox"] {
   opacity: 0.5;
 }
 
-.custom-checkbox #fav-star input[type="checkbox"]:checked ~ .fas {
+.custom-checkbox  input:checked ~ .fas {
   opacity: 1;
 }
