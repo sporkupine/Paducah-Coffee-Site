@@ -9,7 +9,9 @@
   background-color: rgb(228, 241, 229);
 }
 
-.card-text, .card-title {
+.card-text,
+.card-title,
+.favorite-text {
   color: rgb(39, 39, 39) !important;
 }
 
@@ -17,11 +19,41 @@
   cursor: grabbing;
 }
 
-.fav-button {
-  color: rgb(216, 187, 22);
+
+label input[type="checkbox"] {
+  display: none;
 }
 
-.fav-text {
-  text-decoration: none;
-  color: rgb(39, 39, 39) !important;
+.custom-checkbox {
+  margin-left: 2em;
+  position: relative !important;
+  cursor: pointer;
+}
+
+
+.custom-checkbox .favorite-icon .fa-star, #fav-star {
+  color: gold !important;
+  position: absolute;
+  top: 0.1em;
+  left: -0.5rem;
+  font-size: 1.1rem;
+}
+
+
+.custom-checkbox .far {
+  color: rgb(51, 50, 50) !important;
+}
+
+
+.custom-checkbox .fas {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.custom-checkbox:hover .fas {
+  opacity: 0.5;
+}
+
+.custom-checkbox #fav-star input[type="checkbox"]:checked ~ .fas {
+  opacity: 1;
 }
