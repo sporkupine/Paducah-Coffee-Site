@@ -32,7 +32,7 @@ label input[type="checkbox"] {
 
 
 .custom-checkbox .fa-star, #fav-star {
-  color: gold !important;
+  color: rgb(251, 255, 0) !important;
   position: absolute;
   top: 0.1em;
   left: -1.25em;
