@@ -26,6 +26,7 @@ label input[type="checkbox"] {
 
 .custom-checkbox {
   margin-left: 2em;
+  margin-right: 2em;
   position: relative !important;
   cursor: pointer;
 }

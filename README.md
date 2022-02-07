@@ -29,6 +29,8 @@ Developing a new site for Paducah Coffee Company, with e-commerce functionality 
 
 - Implement the loading spinner (cart component, blog component. really anywhere that will/does connect to Firebase)
 
+- Allow authenticated users to "favorite" products in the Shop or Products components.
+
 
 ### DONE:
 - Fix broken hamburger button on navbar collapse
