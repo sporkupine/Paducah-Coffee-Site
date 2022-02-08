@@ -1,7 +1,11 @@
 # Paducah Coffee Site
 
 Developing a new site for Paducah Coffee Company, with e-commerce functionality and a blog. More utility to be added as I think of it.
+
+
 (update 2/2022) This has become less of a production web store, and more of a coding playground / digital scratch paper for me to tinker with design and function ideas. The actual PCC site will be under construction very soon.
+
+
 ## TO DO:
 - Connect to a Firebase backend for product/cart storage as well as blog post storage.
   - users should be able to 'favorite' certain products
