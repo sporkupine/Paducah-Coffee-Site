@@ -1,6 +1,7 @@
 # Paducah Coffee Site
 
 Developing a new site for Paducah Coffee Company, with e-commerce functionality and a blog. More utility to be added as I think of it.
+(update 2/2022) This has become less of a production web store, and more of a coding playground / digital scratch paper for me to tinker with design and function ideas. The actual PCC site will be under construction very soon.
 ## TO DO:
 - Connect to a Firebase backend for product/cart storage as well as blog post storage.
   - users should be able to 'favorite' certain products
@@ -54,6 +55,14 @@ Developing a new site for Paducah Coffee Company, with e-commerce functionality 
  - Create loading spinner
   - add loading spinner to auth component
 - add a footer with social media icons, sitemap, etc (Google all the info that should go in the footer)
+
+
+- favorite button bug
+  - documenting so I can work through it and know what to Google later
+  - favorite button is custom checkbox on each Product card
+  - looks as intended, hover functionality works, animation and css change works when checked
+  - the problem: trying to check any of the buttons on any product will only check/uncheck the first card
+    - I think this is an Angular problem? But I can't find much documentation of it
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
