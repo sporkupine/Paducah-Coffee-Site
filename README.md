@@ -11,15 +11,17 @@ Developing a new site for Paducah Coffee Company, with e-commerce functionality 
   - users should be able to 'favorite' certain products
   - look into having 'admin' authorized accounts
     - admin accounts should be able to post/edit/delete blog posts as well as products (this may be difficult to implement)
-- Merge duplicate products in cart, show number instead of duplicates
-  - may need to make Cart an array of arrays, with logic to check if an item already exists before pushing. See StackOverflow page on subject.
-     - (https://stackoverflow.com/questions/54809558/merge-duplicate-objects-in-an-array) or (https://stackoverflow.com/questions/30025965/merge-duplicate-objects-in-array-of-objects)
-- Stock photos in Shop & Product views
+
 - Cart functionality
   - re-work the "checkout" function
   - currently, checkout button empties 'cart' array
   - would like to move contents to a 'purchased' array and display it in cart view.
+  - Merge duplicate products in cart, show number instead of duplicates
+    - may need to make Cart an array of arrays, with logic to check if an item already exists before pushing. See StackOverflow page on subject.
+      - (https://stackoverflow.com/questions/54809558/merge-duplicate-objects-in-an-array) or (https://stackoverflow.com/questions/30025965/merge-duplicate-objects-in-array-of-objects)
 - Homepage Content
+- Stock photos in Shop & Product views
+  - Have recovered the photos from the original Wordpress site and will be working those into the design
 - add unselectable "sold out" products to Product view, but not Shop view (MAY SCRAP THIS)
 - better organization in Shop &/or Products view ~~- try Bootstrap "card" class~~
   - tinker with card configuration. ~~Maybe the card needs to be on the Shop/Product component rather than product-item?~~
