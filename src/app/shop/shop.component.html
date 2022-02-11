@@ -7,6 +7,10 @@
   <hr />
   <div class="card-group">
     <app-product-item *ngFor="let productEl of products" [product]="productEl">
+      <!-- move favorite button here
+        bind id property to something with the index
+        bind label property to be the same as id for each checkbox
+        then they should work -->
       <a (click)="onAddToCart(productEl)" class="btn btn-primary"
         >Add to Cart</a
       ></app-product-item
