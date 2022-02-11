@@ -69,6 +69,8 @@ Developing a new site for Paducah Coffee Company, with e-commerce functionality 
   - looks as intended, hover functionality works, animation and css change works when checked
   - the problem: trying to check any of the buttons on any product will only check/uncheck the first card
     - I think this is an Angular problem? But I can't find much documentation of it
+  - it seems the problem is that each "checkbox" needs a unique ID or they all get treated as the same thing, so the first one is the only one that is active
+  - potential lead: https://stackoverflow.com/questions/50289383/checkbox-inside-ngfor-only-first-checkbox-is-getting-selected-deselected-ever/50289609
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
