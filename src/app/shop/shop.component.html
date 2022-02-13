@@ -11,6 +11,12 @@
         bind id property to something with the index
         bind label property to be the same as id for each checkbox
         then they should work -->
+        <label for="fav-star" class="custom-checkbox">
+          <input type="checkbox" id="fav-star" />
+          <i class="far fa-star"></i>
+          <i class="fas fa-star"></i>
+          <span class="favorite-text">Favorite</span>
+        </label>
       <a (click)="onAddToCart(productEl)" class="btn btn-primary"
         >Add to Cart</a
       ></app-product-item

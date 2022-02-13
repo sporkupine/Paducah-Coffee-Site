@@ -1,0 +1,40 @@
+/* fav button */
+
+label input[type="checkbox"] {
+  display: none;
+}
+
+.custom-checkbox {
+  margin-left: 2em;
+  margin-right: 2em;
+  position: relative !important;
+  cursor: pointer;
+}
+
+
+.custom-checkbox .fa-star, #fav-star {
+  color: rgb(251, 255, 0) !important;
+  position: absolute;
+  top: 0.1em;
+  left: -1.25em;
+  font-size: 1.1rem;
+}
+
+
+.custom-checkbox .far {
+  color: rgb(51, 50, 50) !important;
+}
+
+
+.custom-checkbox .fas {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.custom-checkbox:hover .fas {
+  opacity: 0.5;
+}
+
+.custom-checkbox  input:checked ~ .fas {
+  opacity: 1;
+}
