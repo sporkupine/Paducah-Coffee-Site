@@ -38,3 +38,9 @@ label input[type="checkbox"] {
 .custom-checkbox  input:checked ~ .fas {
   opacity: 1;
 }
+
+.card-text,
+.card-title,
+.favorite-text {
+  color: rgb(39, 39, 39) !important;
+}
