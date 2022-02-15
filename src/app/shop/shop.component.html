@@ -8,7 +8,7 @@
   <div class="card-group">
     <app-product-item *ngFor="let productEl of products" [product]="productEl">
         <label [for]="productEl.name" class="custom-checkbox">
-          <input type="checkbox" [id]="productEl.name" />
+          <input type="checkbox" [id]="productEl.name" [checked]="productEl.favorite"/>
           <i class="far fa-star"></i>
           <i class="fas fa-star"></i>
           <span class="favorite-text">Favorite</span>
