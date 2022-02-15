@@ -7,12 +7,8 @@
   <hr />
   <div class="card-group">
     <app-product-item *ngFor="let productEl of products" [product]="productEl">
-      <!-- move favorite button here
-        bind id property to something with the index
-        bind label property to be the same as id for each checkbox
-        then they should work -->
-        <label for="fav-star" class="custom-checkbox">
-          <input type="checkbox" id="fav-star" />
+        <label [for]="productEl.name" class="custom-checkbox">
+          <input type="checkbox" [id]="productEl.name" />
           <i class="far fa-star"></i>
           <i class="fas fa-star"></i>
           <span class="favorite-text">Favorite</span>
