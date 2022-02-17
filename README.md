@@ -8,7 +8,9 @@ Developing a new site for Paducah Coffee Company, with e-commerce functionality 
 
 ## TO DO:
 - Connect to a Firebase backend for product/cart storage as well as blog post storage.
+- At this point, will probably wait until I'm capable of setting up a backend in Ruby instead of using a service like Firebase
   - users should be able to 'favorite' certain products
+    - favorite button in place, now just have to make it do... something.
   - look into having 'admin' authorized accounts
     - admin accounts should be able to post/edit/delete blog posts as well as products (this may be difficult to implement)
 
