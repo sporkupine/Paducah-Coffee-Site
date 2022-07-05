@@ -7,12 +7,14 @@ Developing a new site for Paducah Coffee Company, with e-commerce functionality 
 
 
 ## TO DO:
-- Connect to a Firebase backend for product/cart storage as well as blog post storage.
-- At this point, will probably wait until I'm capable of setting up a backend in Ruby instead of using a service like Firebase
+- Create a back-end/API using Rails to handle user login, roles (admin vs customer), inventory etc.
+- 
   - users should be able to 'favorite' certain products
-    - favorite button in place, now just have to make it do... something.
+    - favorite button in place, doesn't do anything as of yet
+    - will likely add product ID to user's "favorites" in back-end
   - look into having 'admin' authorized accounts
-    - admin accounts should be able to post/edit/delete blog posts as well as products (this may be difficult to implement)
+    - admin accounts should be able to post/edit/delete blog posts as well as products
+    - roles will be handled by the back-end in Rails
 
 - Cart functionality
   - re-work the "checkout" function
