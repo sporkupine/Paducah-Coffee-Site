@@ -10,13 +10,13 @@
         <div
           class="card"
           (click)="onBlogPostNav(this.post)"
-          style="cursor: pointer; max-width: 50vw"
+          style="cursor: pointer; max-width: 70vw"
         >
           <h5 class="card-title">
             <strong>{{ post.title }}</strong>
           </h5>
           <h6 class="card-text">{{ post.date | date }}</h6>
-          <p class="card-text">{{ post.content.substr(0, 50) + " ..." }}</p>
+          <p class="card-text">{{ post.content.substr(0, 165) + "..." }}</p>
         </div>
       </div>
   </div>
