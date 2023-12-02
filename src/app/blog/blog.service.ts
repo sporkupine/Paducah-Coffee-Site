@@ -34,6 +34,13 @@ export class BlogService {
         'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero fugiat temporibus provident. Minima, quae dignissimos, mollitia qui distinctio officiis praesentium magnam sapiente cumque porro laborum sunt, culpa quaerat iusto voluptatem ducimus doloremque aperiam nihil id. Corrupti id iusto culpa quidem quibusdam. Maxime, mollitia ad. Beatae praesentium eius, cum vitae voluptate impedit officiis placeat deserunt excepturi quo hic rem nemo animi non deleniti aut debitis alias eligendi. Esse, maxime!',
       id: 4,
     },
+    {
+      title: 'Site Update',
+      date: 'November 10, 2023',
+      content:
+        "Since beginning my journey as a software developer (and starting this mock-site-for-a-real-company practice project), I have gained a great deal of skill and experience. As of this post, I have a year of experience developing software professionally. In this time, I have learned that it's best not to reinvent the wheel, and that plenty of platforms give me the functionality to customize my own webstore and handle secure checkout, with options to create an account, favorite products, sign up for email lists, and everything else I wanted to do with this site. So I'll be building the actual Paducah Coffee Co. site with WordPress, and leaving the door open for a potential rebuild down the line. This site will remain in place as a coding sandbox of sorts, but it will never make the transition into being an actual ecommerce website.",
+      id: 5,
+    },
   ];
 
   getBlogPosts() {
