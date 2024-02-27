@@ -3,7 +3,7 @@
 Developing a new site for Paducah Coffee Company, with e-commerce functionality and a blog. More utility to be added as I think of it.
 
 
-(update 2/2022) This has become less of a production web store, and more of a coding playground / digital scratch paper for me to tinker with design and function ideas. The actual PCC site will be under construction very soon.
+(update 2/2022) This has become less of a production web store, and more of a coding playground / digital scratch paper for me to tinker with design and function ideas. The actual PCC site will be created using WordPress and existing tools for payment processing and secure checkout.
 
 (update 7/2022) Work has begun on a Ruby on Rails back-end to control most of the business/database logic of the application. This will allow me to implement user roles, handle cart/checkout functionality, implement an inventory system, and allow logged-in customers to "favorite" certain products for more streamlined future purchases.
 
